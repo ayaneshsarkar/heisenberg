@@ -20,7 +20,7 @@
 
     public function __construct() {
       // Set DSN
-      $dsn = 'sqlsrv:server = ' . $this->host . '; Database = ' . $this->dbname . '';
+      $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
       //$options = [PDO::ATTR_PERSISTENT => true,  PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
 
       // Create PDO Instance

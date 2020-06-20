@@ -14,7 +14,7 @@
     }
 
     public function about() {
-      $data = ['title' => 'About Us'];
+      $data = ['title' => 'About Us', 'version' => '1.0.0'];
       $this->view('pages/about', $data);
     }
     

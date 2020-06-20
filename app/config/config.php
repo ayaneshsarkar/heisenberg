@@ -1,17 +1,17 @@
 <?php 
 
   // DB Params
-  define('DB_HOST', '__HOSTNAME__');
-  define('DB_USER', '__USERNAME__');
-  define('DB_PASS', '__PASSWORD__');
-  define('DB_NAME', '__DBNAME__');
+  define('DB_HOST', '127.0.0.1');
+  define('DB_USER', 'ayanesh');
+  define('DB_PASS', 'root');
+  define('DB_NAME', 'ayaneshmvc');
 
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));
 
   // URL Root
-  define('URLROOT', '__URL__');
+  define('URLROOT', 'http://ayaneshmvc.local');
 
   // Site Name
-  define('SITENAME', '__SITENAME__');
+  define('SITENAME', 'AyaneshMVC');
   
