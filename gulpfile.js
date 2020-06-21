@@ -1,12 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var browserSync = require('browser-sync').create();
-
-var babel = require('gulp-babel');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
 
 // Compile Sass into CSS
-
 function runSass() {
 
   // Sass File Destination
@@ -14,35 +9,22 @@ function runSass() {
     // Compile Sass
     .pipe(sass())
     // Compiled to Css at public/css/style.css
-    .pipe(gulp.dest('./public/css'))
-    // Stream changes to all Browsers
-    .pipe(browserSync.stream());
+    .pipe(gulp.dest('./public/css'));
 
 }
 
-function runBabel() {
-
-  return gulp.src('./app/resources/js/**/*.js')
-    .pipe(babel())
-    //.pipe(concat('script.js'))
-    .pipe(gulp.dest('./public/js'))
-    .pipe(browserSync.stream());
-
+function media() {
+  return gulp.src('./app/resources/media/*/*')
+    .pipe(gulp.dest('./public/media'));
 }
+
+
 
 function watch() {
-  browserSync.init({
-    server: {
-      baseDir: './'
-    }
-  });
   gulp.watch('./app/resources/sass/**/*.scss', runSass);
-  gulp.watch('./app/resources/js/**/*.js', runBabel)
+  gulp.watch('./app/resources/media/*/*', media);
 }
 
 exports.runSass = runSass;
-
-exports.runBabel = runBabel;
+exports.media = media;
 exports.watch = watch;
-
-

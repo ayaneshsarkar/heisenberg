@@ -12,7 +12,7 @@ body .template {
   width: 100%;
   height: 100vh;
   padding: 30px;
-  background-image: linear-gradient(to right bottom, rgba(71, 74, 138, 0.7), rgba(120, 124, 181, 0.7)), url("https://www.hostinger.com/blog/wp-content/uploads/sites/4/2019/12/php-7.4-hostinger-scaled.png");
+  background-image: linear-gradient(to right bottom, rgba(71, 74, 138, 0.7), rgba(120, 124, 181, 0.7)), url("../media/img/php.png");
   background-size: cover;
   background-position: top; }
 
