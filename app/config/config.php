@@ -13,5 +13,5 @@
   define('URLROOT', 'http://ayaneshmvc.local');
 
   // Site Name
-  define('SITENAME', 'AyaneshMVC');
+  define('SITENAME', 'HeisenbergMVC');
   

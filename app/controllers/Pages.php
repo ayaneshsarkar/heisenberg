@@ -8,7 +8,7 @@
 
     public function index() {
       
-      $data = ['title' => 'AyaneshMVC'];
+      $data = ['title' => 'HeisenbergMVC'];
       $this->view('pages/index', $data);
 
     }

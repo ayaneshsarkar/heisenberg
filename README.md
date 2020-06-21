@@ -1,8 +1,8 @@
 <p align="center"><img src="https://www.php.net//images/logos/new-php-logo.svg" width="250"></p>
 
-## About AyaneshMVC
+## About HeisenbergMVC
 
-AyaneshMVC is really a great app for begginners. Really easy to setup and get started. We use a MVC structure like other popular PHP Frameworks. 
+HeisenbergMVC is really a great app for begginners. Really easy to setup and get started. We use a MVC structure like other popular PHP Frameworks. 
 
 You get traditional Model, Controller and View relations with easy Database actions. More on below.
 
@@ -18,7 +18,7 @@ Big Shoutout to [Mr. Brad Traversey](https://github.com/bradtraversy) who actual
 
 ## Vertual Server Creation
 
-Before installing AyaneshMVC we need to create a Virtual Server to get our app running. When you are using a project for production, it is highly recommended to create a Virtual Server, that's why we are making it from the start.
+Before installing HeisenbergMVC we need to create a Virtual Server to get our app running. When you are using a project for production, it is highly recommended to create a Virtual Server, that's why we are making it from the start.
 
 Steps are below.
 
@@ -39,8 +39,8 @@ Steps are below.
         ```
         <VirtualHost *:80>
           ServerAdmin webmaster@localhost
-          ServerName ayaneshmvc.local
-          ServerAlias www.ayaneshmvc.local
+          ServerName heisenberg.local
+          ServerAlias www.heisenberg.local
           DocumentRoot "[__PATH TO YOUR PROJECT FOLDER__]"
 
           <Directory "[__PATH TO YOUR PROJECT FOLDER__]">
@@ -49,8 +49,8 @@ Steps are below.
             Require all granted
           </Directory>
 
-          ErrorLog logs/ayaneshmvc.error.log
-          CustomLog logs/ayaneshmvc.custom.log
+          ErrorLog logs/heisenberg.error.log
+          CustomLog logs/heisenberg.custom.log
         </VirtualHost>
         
         ```
@@ -64,7 +64,7 @@ Steps are below.
 
 ## Installation
 
-Installing AyaneshMVC is easy. Here are the steps below on how to properly install AyaneshMVC.
+Installing HeisenbergMVC is easy. Here are the steps below on how to properly install HeisenbergMVC.
 
 - Open your Terminal or Command Prompt or Powershell
 - `git clone https://github.com/ayaneshsarkar/heisenbergmvc.git`
@@ -78,4 +78,4 @@ Installing AyaneshMVC is easy. Here are the steps below on how to properly insta
 
   - `define('URLROOT', '__URLROOT__')` Change `__URLROOT__` to your Virtual Server Name as mentioned above
   - `define('SITENAME', '__SITENAME__')` Change `__SITENAME__` to the Site Name of your choice.
-- **And there you go, AyaneshMVC is installed!**
+- **And there you go, HeisenbergMVC is installed!**
