@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ayaneshsarkar/ayaneshmvc.git"
+    "url": "git+https://github.com/ayaneshsarkar/heisenbergmvc.git"
   },
   "keywords": [
     "ayaneshmvc",
@@ -24,9 +24,9 @@
   "author": "Ayanesh Sarkar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ayaneshsarkar/ayaneshmvc/issues"
+    "url": "https://github.com/ayaneshsarkar/heisenbergmvc/issues"
   },
-  "homepage": "https://github.com/ayaneshsarkar/ayaneshmvc#readme",
+  "homepage": "https://github.com/ayaneshsarkar/heisenbergmvc#readme",
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/polyfill": "^7.10.1",
