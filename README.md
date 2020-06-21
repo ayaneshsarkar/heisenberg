@@ -51,7 +51,7 @@ Steps are below.
           &nbsp;&nbsp;&nbsp;&nbsp;`ErrorLog logs/ayaneshmvc.error.log`<br />
           &nbsp;&nbsp;&nbsp;&nbsp;`CustomLog logs/ayaneshmvc.custom.log`<br />
       `</VirtualHost>`
-   - Change `ServerName` and `ServerAlias` to your choosing, but add the `.local` in the last
+   - Change `ServerName` and `ServerAlias` to your choosing, but add the `.local` in the last.
    - `ServerName` will be used to access the `URLROOT` during the installation, so have that in mind.
    - **NOTE:** When you type the `ServerName` in your browser, add `http://` before it.
    - Change the `__PATH TO YOUR FOLDER__` to the actual path of your **Project Folder**.
