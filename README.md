@@ -24,17 +24,17 @@ Steps are below.
 
   ## For Windows
 
-   - Go to your root Apache folder (For most Xampp users, it is in the `C:/xampp/apache`) 
-   - Edit `conf/httpd.conf` and uncomment these three lines
+   - Go to your root Apache folder (For most Xampp users, it is in the `C:/xampp/apache`). 
+   - Edit `conf/httpd.conf` and uncomment these three lines.
      - Set `#LoadModule rewrite_module modules/mod_rewrite.so` to 
-       `LoadModule rewrite_module modules/mod_rewrite.so`
+       `LoadModule rewrite_module modules/mod_rewrite.so`.
 
      - Set `#LoadModule vhost_alias_module modules/mod_vhost_alias.so` to 
-       `LoadModule vhost_alias_module modules/mod_vhost_alias.so`
+       `LoadModule vhost_alias_module modules/mod_vhost_alias.so`.
 
-     - Set `#Include conf/extra/httpd-vhosts.conf` to `Include conf/extra/httpd-vhosts.conf`
-   - Go to `conf/extra/httpd-vhosts.conf`
-     - At the bottom of the document put the following lines.
+     - Set `#Include conf/extra/httpd-vhosts.conf` to `Include conf/extra/httpd-vhosts.conf`.
+   - Go to `conf/extra/httpd-vhosts.conf`.
+     - At the bottom of the document add the following lines.
      - 
         `<VirtualHost *:80>`<br />
           &nbsp;&nbsp;&nbsp;&nbsp;`ServerAdmin webmaster@localhost`<br />
