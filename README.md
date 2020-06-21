@@ -14,7 +14,7 @@ Big Shoutout to [Mr. Brad Traversey](https://github.com/bradtraversy) who actual
 - MySQL
 - PHP v5.0 or higher. (PHP 7.0 or higher recommended)
 - Nodejs v12.0 or higher.
-- NPM Package Manager v6.0 or higher installed with Nodejs.
+- NPM Package Manager v6.0 higher or installed with Nodejs.
 - Git v2.0 or higher.
 
 ## Virtual Server Creation
