@@ -50,7 +50,7 @@ Steps are below.
           </Directory>
 
           ErrorLog logs/heisenberg.error.log
-          CustomLog logs/heisenberg.custom.log
+          CustomLog logs/heisenberg.custom.log common
         </VirtualHost>
         
         ```
@@ -61,6 +61,50 @@ Steps are below.
    - Change the `__PATH TO YOUR FOLDER__` to the actual path of your **Project Folder**.
    - Restart Apache.
    - **There you go, the Virtual Server is ready to start.**
+
+  ## For Linux (Debian based...example: Ubuntu) 
+
+   - Go to your root Apache folder and open in Terminal (For Lamp Stack users, it is in the `/etc/apache2`). 
+   - We're going to create a new configuaration rather than adding it to the Host `conf` file.
+   - `$` `sudo nano sites-available/heisenberg.conf` 
+     - Here we are naming the conf file `heisenberg.conf`, you can name it whatever you want, but remember it for the setup purposes.
+   - 
+     ```
+      <VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName heisenberg.local
+        ServerAlias www.heisenberg.local
+        DocumentRoot "[__PATH TO YOUR PROJECT FOLDER__]"
+
+        <Directory "[__PATH TO YOUR PROJECT FOLDER__]">
+          Options Indexes FollowSymLinks
+          AllowOverride All
+          Require all granted
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+      </VirtualHost>
+
+     ```
+
+   - Change `ServerName` and `ServerAlias` to your choosing, but add the `.local` in the last.
+   - `ServerName` will be used to access the `URLROOT` during the installation, so have that in mind.
+   - **NOTE:** When you type the `ServerName` in your browser, add `http://` before it.
+   - Change the `__PATH TO YOUR FOLDER__` to the actual path of your **Project Folder**.  
+   - Save the file.
+   - `$` `sudo a2ensite heisenberg.conf`
+   - `$` `sudo a2dissite 000-default.conf` 
+     - If you have any other default configuration already set up, then type that instead of `000-default.conf`  
+   - `$` `sudo a2enmod rewrite`  
+   - `$` `sudo nano /etc/hosts`
+   - Type
+     ```
+     127.0.0.1 heisenberg.local
+
+     ```
+   - Save the file.
+   - `$` `sudo systemctl restart apache2` OR `sudo service apache2 reload`
 
 ## Installation
 
