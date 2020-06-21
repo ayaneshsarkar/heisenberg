@@ -11,6 +11,7 @@ Big Shoutout to [Mr. Brad Traversey](https://github.com/bradtraversy) who actual
 ## Server Requirements
 
 - Apache v2.0 or higher.
+- MySQL
 - PHP v5.0 or higher. (PHP 7.0 or higher recommended)
 - Nodejs v12.0 or higher.
 - NPM Package Manager v6.0 or higher installed with Nodejs.
@@ -55,10 +56,16 @@ Steps are below.
         
         ```
 
-   - Change `ServerName` and `ServerAlias` to your choosing, but add the `.local` in the last.
+   - Change `ServerName` and `ServerAlias` of your choosing, but add the `.local` in the last.
    - `ServerName` will be used to access the `URLROOT` during the installation, so have that in mind.
    - **NOTE:** When you type the `ServerName` in your browser, add `http://` before it.
    - Change the `__PATH TO YOUR FOLDER__` to the actual path of your **Project Folder**.
+   - Edit `C:/Windows/System32/drivers/etc/hosts`
+   - Type
+      ```
+      127.0.0.1 heisenberg.local
+      
+      ```
    - Restart Apache.
    - **There you go, the Virtual Server is ready to start.**
 
@@ -88,7 +95,7 @@ Steps are below.
 
      ```
 
-   - Change `ServerName` and `ServerAlias` to your choosing, but add the `.local` in the last.
+   - Change `ServerName` and `ServerAlias` of your choosing, but add the `.local` in the last.
    - `ServerName` will be used to access the `URLROOT` during the installation, so have that in mind.
    - **NOTE:** When you type the `ServerName` in your browser, add `http://` before it.
    - Change the `__PATH TO YOUR FOLDER__` to the actual path of your **Project Folder**.  
@@ -123,3 +130,25 @@ Installing HeisenbergMVC is easy. Here are the steps below on how to properly in
   - `define('URLROOT', '__URLROOT__')` Change `__URLROOT__` to your Virtual Server Name as mentioned above
   - `define('SITENAME', '__SITENAME__')` Change `__SITENAME__` to the Site Name of your choice.
 - **And there you go, HeisenbergMVC is installed!**
+
+## Sass
+
+In 2020, Sass is the most efficient way to write CSS. Even if you are using [Bootstrap](https://getbootstrap.com), you probably use Sass to customize it. And of course if you prefer to use normal CSS, you can also stick to that, even if the extension of the file is `.scss`, this is very basic. 
+
+In HeisenbergMVC we will only be using `.scss` files which will be compiled to normal CSS in your public folder. As mentioned above, you can use normal CSS in the `.scss` files. 
+
+We are using [Gulp](https://gulpjs.com/) to compile Sass to CSS. There are many ways, but we are sticking to [Gulp](https://gulpjs.com/). So, make sure you used `npm install` during the installtion of our project.
+
+
+- To write Sass code or CSS, go to `app/resources/sass/`.
+- Here you can create `.scss` files to write sass which will be compiled to CSS in the `public` folder.
+- You need to include the CSS file into your respective `.php` file `<head>` tag.
+  - Example: If you create `app.scss` then you need to add this in the `<head>` tag
+    ```
+    <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/app.css">
+    ```
+  - Remember in the `<head>` tag you need to add `.css` not `.scss` because it will compile into CSS in the public folder.
+- You can always use the traditional Sass folder structure and import other files.
+- You can create a folder inside the `sass` folder and add those files which you want to import to the root `.scss` file.
+
+- **There you go! You just learned how to add Sass or CSS in the HeisenbergMVC**
