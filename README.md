@@ -151,4 +151,7 @@ We are using [Gulp](https://gulpjs.com/) to compile Sass to CSS. There are many 
 - You can always use the traditional Sass folder structure and import other files.
 - You can create a folder inside the `sass` folder and add those files which you want to import to the root `.scss` file.
 
-- **There you go! You just learned how to add Sass or CSS in the HeisenbergMVC**
+- You need to run `npm run gulp-sass` OR `npm run dev` in the terminal to see the changes take place.
+- If don't prefer use `npm run gulp-sass` OR `npm run dev` everytime you change something you may want to use
+  `npm run gulp-watch` OR `npm run watch`.
+- **There you go! You just learned how to add Sass or CSS in the HeisenbergMVC.**
