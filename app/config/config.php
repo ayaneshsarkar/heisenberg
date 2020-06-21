@@ -1,17 +1,16 @@
 <?php 
 
   // DB Params
-  define('DB_HOST', '127.0.0.1');
-  define('DB_USER', 'ayanesh');
-  define('DB_PASS', 'root');
-  define('DB_NAME', 'ayanesh');
+  define('DB_HOST', '__DBHOST__');
+  define('DB_USER', '__DBUSER__');
+  define('DB_PASS', '__DBPASS__');
+  define('DB_NAME', '__DBNAME__');
 
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));
 
   // URL Root
-  define('URLROOT', 'http://ayaneshmvc.local');
+  define('URLROOT', '__URLROOT__');
 
   // Site Name
   define('SITENAME', 'HeisenbergMVC');
-  
