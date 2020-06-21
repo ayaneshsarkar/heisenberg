@@ -74,4 +74,4 @@ Installing AyaneshMVC is easy. Here are the steps below on how to properly insta
 
   - `define('URLROOT', '__URLROOT__')` Change `__URLROOT` to your Virtual Server Name as mentioned above
   - `define('SITENAME', '__SITENAME__')`
-- **And There you go, AyaneshMVC is installed!**
+- **And there you go, AyaneshMVC is installed!**
