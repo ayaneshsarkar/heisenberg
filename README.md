@@ -135,7 +135,7 @@ Installing HeisenbergMVC is easy. Here are the steps below on how to properly in
 
 In 2020, Sass is the most efficient way to write CSS. Even if you are using [Bootstrap](https://getbootstrap.com), you probably use Sass to customize it. And of course if you prefer to use normal CSS, you can also stick to that, even if the extension of the file is `.scss`, this is very basic. 
 
-In HeisenbergMVC we will only be using `.scss` files which will be compiled to normal CSS in your public folder. As mentioned above, you can use normal CSS in the `.scss` files. 
+In HeisenbergMVC we will be using `.scss` files which will be compiled to normal CSS in your public folder. As mentioned above, you can use normal CSS in the `.scss` files. 
 
 We are using [Gulp](https://gulpjs.com/) to compile Sass to CSS. There are many ways, but we are sticking to [Gulp](https://gulpjs.com/). So, make sure you used `npm install` during the installtion of our project.
 
