@@ -13,4 +13,4 @@
   define('URLROOT', '__URLROOT__');
 
   // Site Name
-  define('SITENAME', 'HeisenbergMVC');
+  define('SITENAME', '__SITENAME__');
