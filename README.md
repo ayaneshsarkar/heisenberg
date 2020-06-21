@@ -133,7 +133,7 @@ Installing HeisenbergMVC is easy. Here are the steps below on how to properly in
   - Open favourite browser and go to `http://__VIRTUALADDERESS__`
 - **And there you go, HeisenbergMVC is installed!**
 
-![alt text](https://www.dropbox.com/s/v8qa3rdb34dwb4h/heisenbergmvc.JPG?raw=1)
+![Installed Image](https://www.dropbox.com/s/v8qa3rdb34dwb4h/heisenbergmvc.JPG?raw=1)
 
 ## Sass
 
