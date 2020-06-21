@@ -129,7 +129,11 @@ Installing HeisenbergMVC is easy. Here are the steps below on how to properly in
 
   - `define('URLROOT', '__URLROOT__')` Change `__URLROOT__` to your Virtual Server Name as mentioned above
   - `define('SITENAME', '__SITENAME__')` Change `__SITENAME__` to the Site Name of your choice.
+  
+  - Open favourite browser and go to `http://__VIRTUALADDERESS__`
 - **And there you go, HeisenbergMVC is installed!**
+
+![alt text](https://www.dropbox.com/s/v8qa3rdb34dwb4h/heisenbergmvc.JPG?raw=1)
 
 ## Sass
 
