@@ -16,7 +16,7 @@ Big Shoutout to [Mr. Brad Traversey](https://github.com/bradtraversy) who actual
 - NPM Package Manager v6.0 or higher installed with Nodejs.
 - Git v2.0 or higher.
 
-## Vertual Server Creation
+## Virtual Server Creation
 
 Before installing HeisenbergMVC we need to create a Virtual Server to get our app running. When you are using a project for production, it is highly recommended to create a Virtual Server, that's why we are making it from the start.
 
