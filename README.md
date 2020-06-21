@@ -145,13 +145,13 @@ We are using [Gulp](https://gulpjs.com/) to compile Sass to CSS. There are many 
 
 
 - To write Sass code or CSS, go to `app/resources/sass/`.
-- Here you can create `.scss` files to write sass which will be compiled to CSS in the `public` folder.
+- Here you can create `.scss` files to write sass which will be compiled to CSS in the `public/css` folder.
 - You need to include the CSS file into your respective `.php` file `<head>` tag.
   - Example: If you create `app.scss` then you need to add this in the `<head>` tag
     ```
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/app.css">
     ```
-  - Remember in the `<head>` tag you need to add `.css` not `.scss` because it will compile into CSS in the public folder.
+  - Remember in the `<head>` tag you need to add `.css` not `.scss` because it will compile into CSS in the `public/css` folder.
 - You can always use the traditional Sass folder structure and import other files.
 - You can create a folder inside the `sass` folder and add those files which you want to import to the root `.scss` file.
 
@@ -159,3 +159,25 @@ We are using [Gulp](https://gulpjs.com/) to compile Sass to CSS. There are many 
 - If don't prefer use `npm run gulp-sass` OR `npm run dev` everytime you change something you may want to use
    `npm run gulp-watch` OR `npm run watch`. 
 - **There you go! You just learned how to add Sass or CSS in the HeisenbergMVC.**
+
+## JavaScript
+
+Ofcourse, you are going to use JavaScript. 
+
+Many versions of popular browsers don't support ES7 or Async-Await code. We made sure you will not have the problem. 
+
+We will be using [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/) to compile JavaScript to ES6 which is readable by almost all browsers. We could have used [Gulp](https://gulpjs.com/) like we used to compile Sass, but it is sensible to use [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/) to compile JavaScript, it is a far better choice. 
+
+Here are the steps on how to use Javascript to HeisenbergMVC.
+
+- Go to `app/resources/js/app.js`.
+- Whatever JavaScript you want to write, has to be written at `app.js`.
+- You may want to create a folder inside the `app/resources/js/` and add the `.js` files which you want to import in the `app.js` file. This is a traditional JavaScript folder structure.
+
+- If you want to rename `app.js`, you also need to make changes to the `webpack.config.js` file in the root folder.
+- JavaScript will be compiled to single `index.js` file at `public/js` folder which you can add into the body of your `.php` file. 
+
+- The changes will take place after you run `npm run webpack` OR `npm run dev`.
+- If you don't want to run `npm run webpack` OR `npm run dev` every time you make changes, then you may run `npm run webpack-watch` OR `npm run watch`.
+
+- **There you go! You just learned how to add JavaScript in the HeisenbergMVC.**
