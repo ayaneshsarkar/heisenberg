@@ -9,7 +9,7 @@
     "gulp-sass": "gulp runSass",
     "gulp-media": "gulp media",
     "gulp-watch": "gulp runSass && gulp media && gulp watch",
-    "dev": "npm run webpack && npm run gulp-sass",
+    "dev": "npm run webpack && npm run gulp-sass && npm run gulp-media",
     "watch": "npm-run-all --parallel webpack-watch gulp-watch"
   },
   "repository": {
