@@ -166,7 +166,7 @@ Ofcourse, you are going to use JavaScript.
 
 Many versions of popular browsers don't support ES7 or Async-Await code. We made sure you will not have the problem. 
 
-We will be using [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/) to compile JavaScript to ES6 which is readable by almost all browsers. We could have used [Gulp](https://gulpjs.com/) like we used to compile Sass, but it is sensible to use [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/) to compile JavaScript, it is a far better choice. 
+We will be using [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/) to compile JavaScript which is readable by almost all browsers. We could have used [Gulp](https://gulpjs.com/) like we used to compile Sass, but it is sensible to use [Webpack](https://webpack.js.org/) and [Babel](https://babeljs.io/) to compile JavaScript, it is a far better choice. 
 
 Here are the steps on how to use Javascript to HeisenbergMVC.
 
