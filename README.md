@@ -181,3 +181,11 @@ Here are the steps on how to use Javascript to HeisenbergMVC.
 - If you don't want to run `npm run webpack` OR `npm run dev` every time you make changes, then you may run `npm run webpack-watch` OR `npm run watch`.
 
 - **There you go! You just learned how to add JavaScript in the HeisenbergMVC.**
+
+
+
+
+
+
+
+
