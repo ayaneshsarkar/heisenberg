@@ -6,7 +6,7 @@ HeisenbergMVC is really a great app for begginners. Really easy to setup and get
 
 You get traditional Model, Controller and View relations with easy Database actions. More on below.
 
-Big Shoutout to [Mr. Brad Traversey](https://github.com/bradtraversy) who actually designed this framework and the credit goes to him. I just added Sass and ES6 compiler, and the usage of it can be found on the docs below.
+<!-- Big Shoutout to [Mr. Brad Traversey](https://github.com/bradtraversy) who actually designed this framework and the credit goes to him. I just added Sass and ES6 compiler, and the usage of it can be found on the docs below. -->
 
 ## Server Requirements
 
